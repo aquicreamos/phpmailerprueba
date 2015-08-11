@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
@@ -22,9 +22,9 @@ $mail->addAttachment('vendor/phpmailer/phpmailer/examples/images/phpmailer_mini.
 
 //send the message, check for errors
 if (!$mail->send()) {
-    echo "El error al enviar el mail es: " . $mail->ErrorInfo;
+	echo "El error al enviar el mail es: ".$mail->ErrorInfo;
 } else {
-    echo "El mensaje fue enviado!";
+	echo "El mensaje fue enviado!";
 }
 
- ?>
+?>
